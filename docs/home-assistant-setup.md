@@ -2,6 +2,8 @@
 
 This document covers standing up Home Assistant for the home-control project and connecting the BFF.
 
+Premise and security-surface rationale: [ADR 0001](../adr/0001-home-assistant-integration.md).
+
 ## Choose an install method
 
 | Method | Best for | This repo |
