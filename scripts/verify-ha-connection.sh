@@ -54,7 +54,7 @@ import ssl
 try:
     import websocket
 except ImportError:
-  # Fallback: stdlib-only check via HTTP upgrade probe is unreliable; require websocket-client
+    # Fallback: stdlib-only check via HTTP upgrade probe is unreliable; require websocket-client
     print("SKIP: install python3-websocket-client for WebSocket check")
     sys.exit(0)
 

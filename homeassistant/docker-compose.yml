@@ -3,8 +3,8 @@ services:
     image: ghcr.io/home-assistant/home-assistant:stable
     container_name: homeassistant
     restart: unless-stopped
+    # Required for some integrations (Z-Wave, Bluetooth, etc.)
     privileged: true
-  # Required for some integrations (Z-Wave, Bluetooth, etc.)
     network_mode: host
     volumes:
       - ./config:/config
