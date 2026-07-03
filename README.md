@@ -42,3 +42,11 @@ cp config/ha.env.example config/ha.env
 ```
 
 For production on target home hardware, use [Home Assistant OS](https://www.home-assistant.io/installation/). See the setup guide for token creation and LAN reachability requirements.
+
+### Local test (no real HA required)
+
+```bash
+./scripts/test-verify-ha-connection.sh
+```
+
+Runs a mock HA server and exercises REST `/api/` and WebSocket `/api/websocket` through `scripts/verify-ha-connection.sh`.
